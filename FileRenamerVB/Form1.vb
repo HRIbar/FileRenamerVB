@@ -107,6 +107,7 @@ Public Class Form1
 
     Private Sub Button3_Click(sender As System.Object, e As System.EventArgs) Handles Button3.Click
         isprefix = True
+        isnewname = False 'pogoj ki ga je potrebno dodati za več krogov izvedbe, bug pri prikazu na predavanjih
         ListBox1.Items.Clear()
         ListBox1.Items.Add("Vnesi besedilo za prefix.")
         Me.Button2.Enabled = True
@@ -115,6 +116,7 @@ Public Class Form1
 
     Private Sub Button4_Click(sender As System.Object, e As System.EventArgs) Handles Button4.Click
         isnewname = True
+        isprefix = False 'pogoj ki ga je potrebno dodati za več krogov izvedbe, bug pri prikazu na predavanjih
         ListBox1.Items.Clear()
         ListBox1.Items.Add("Vnesi besedilo za novo ime.")
         Me.Button2.Enabled = True
